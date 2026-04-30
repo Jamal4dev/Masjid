@@ -1,0 +1,501 @@
+:root {
+  color-scheme: light;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #111827;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+a {
+  font: inherit;
+}
+
+.container {
+  width: min(1160px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(226,232,240,0.8);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.brand p {
+  margin: 0.25rem 0 0;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-toggle {
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hero-section {
+  padding: 4rem 0 2rem;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: #4338ca;
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+.hero-section h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+  max-width: 12ch;
+}
+
+.hero-section p {
+  max-width: 46ch;
+  color: #475569;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 1.35rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #4338ca;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background: rgba(67,56,202,0.12);
+  color: #4338ca;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-card {
+  border-radius: 1.5rem;
+  padding: 2rem;
+  background: radial-gradient(circle at top left, rgba(67,56,202,0.15), transparent 45%), #ffffff;
+  border: 1px solid rgba(148,163,184,0.18);
+  box-shadow: 0 30px 80px rgba(15,23,42,0.08);
+}
+
+.hero-card h3 {
+  margin-top: 0;
+}
+
+.section-light,
+.section-dark {
+  padding: 4rem 0;
+}
+
+.section-light {
+  background: #f8fafc;
+}
+
+.section-dark {
+  background: #eef2ff;
+}
+
+.section-label {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  color: #4338ca;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+}
+
+.section-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.feature-list,
+.service-cards {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.feature-list article,
+.service-cards article,
+.contact-card {
+  background: #ffffff;
+  padding: 1.75rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(148,163,184,0.18);
+  box-shadow: 0 20px 40px rgba(15,23,42,0.05);
+}
+
+.feature-list article h3,
+.service-cards article h3,
+.contact-card h3 {
+  margin-top: 0;
+}
+
+.service-cards {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.prayer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.prayer-table {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(148,163,184,0.18);
+}
+
+.prayer-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(148,163,184,0.12);
+}
+
+.prayer-row.next {
+  background: rgba(67,56,202,0.08);
+  border-radius: 0.95rem;
+  padding: 1rem;
+}
+
+.calendar-day.empty {
+  background: transparent;
+  border: none;
+  pointer-events: none;
+}
+
+.prayer-table div:last-child {
+  border-bottom: none;
+}
+
+.prayer-widget {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.next-prayer-card {
+  background: #ffffff;
+  padding: 1.75rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(148,163,184,0.18);
+  box-shadow: 0 20px 40px rgba(15,23,42,0.05);
+}
+
+.next-prayer-card h3 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.75rem;
+}
+
+.prayer-time {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.countdown-text,
+.small-text {
+  margin: 0.75rem 0 0;
+  color: #475569;
+}
+
+.calendar-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 1.5rem;
+  align-items: stretch;
+  margin-top: 1.5rem;
+}
+
+.calendar-panel,
+.event-panel {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(148,163,184,0.18);
+  box-shadow: 0 24px 60px rgba(15,23,42,0.05);
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.calendar-header div {
+  text-align: center;
+}
+
+.calendar-month,
+.calendar-year {
+  margin: 0;
+}
+
+.calendar-month {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.calendar-btn {
+  border: 1px solid rgba(67,56,202,0.12);
+  background: #ffffff;
+  color: #4338ca;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.calendar-grid span {
+  display: grid;
+  place-items: center;
+  padding: 0.75rem 0.5rem;
+  background: #eef2ff;
+  border-radius: 0.85rem;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.calendar-day {
+  min-height: 4rem;
+  display: grid;
+  align-content: start;
+  gap: 0.35rem;
+  padding: 0.75rem 0.5rem;
+  border-radius: 1rem;
+  background: #f8fafc;
+  color: #0f172a;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.calendar-day:hover {
+  background: #eef2ff;
+}
+
+.calendar-day.today {
+  border-color: #4338ca;
+  background: rgba(67,56,202,0.1);
+}
+
+.calendar-day.has-event::after {
+  content: '';
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background: #4338ca;
+  justify-self: end;
+  margin-top: 0.15rem;
+}
+
+.event-summary h3 {
+  margin-top: 0;
+}
+
+.event-list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.event-list li {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #f8fafc;
+  border: 1px solid rgba(148,163,184,0.18);
+}
+
+.event-list li strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 900px) {
+  .calendar-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-section {
+  padding-bottom: 6rem;
+}
+
+.contact-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.site-footer {
+  padding: 1.5rem 0;
+  background: #1f2937;
+  color: #e2e8f0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-inner p {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+@media (max-width: 900px) {
+  .hero-content,
+  .prayer-grid,
+  .section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .main-nav.nav-open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .hero-section {
+    padding-top: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-card,
+  .feature-list article,
+  .service-cards article,
+  .contact-card,
+  .prayer-table {
+    padding: 1.25rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+}
+

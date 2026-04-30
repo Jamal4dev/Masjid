@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Central Mosque Ridwanullah | Ikorodu, Lagos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo">🕌</span>
+        <div>
+          <h1>Ridwanullah Central Mosque</h1>
+          <p>Ikorodu, Lagos</p>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Programs</a>
+        <a href="#events">Events</a>
+        <a href="#prayer-times">Prayer Times</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">Welcome to Central Mosque Ridwanullah</p>
+          <h2>Serving the Ikorodu community with faith, guidance, and unity.</h2>
+          <p>Join us for prayer, education, and community programmes.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Visit Us</a>
+            <a class="btn btn-secondary" href="#prayer-times">Prayer Times</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-card">
+            <h3>Next Jumu'ah</h3>
+            <p>Friday, 2:30 PM</p>
+            <p>Khutbah and two rak'ahs prayer with community lecture.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-light">
+      <div class="container section-grid">
+        <div>
+          <span class="section-label">About the Mosque</span>
+          <h2>Our mission is to unite, educate, and uplift.</h2>
+          <p>Central Mosque Ridwanullah is a welcoming place for worshippers from Ikorodu and beyond. We provide daily prayers, Islamic classes, youth outreach, and social support for families.</p>
+        </div>
+        <div class="feature-list">
+          <article>
+            <h3>Daily Prayers</h3>
+            <p>Fajr, Dhuhr, Asr, Maghrib and Isha in a serene and peaceful environment.</p>
+          </article>
+          <article>
+            <h3>Community Support</h3>
+            <p>Support programmes for families, children and new converts in Ikorodu.</p>
+          </article>
+          <article>
+            <h3>Religious Classes</h3>
+            <p>Qur'an lessons, Tafsir sessions, and Islamic studies for all ages.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section-dark">
+      <div class="container">
+        <span class="section-label">Our Programmes</span>
+        <h2>Activities for spiritual growth and community wellbeing.</h2>
+        <div class="service-cards">
+          <article>
+            <h3>Saturday Tafsir</h3>
+            <p>Weekly Qur'an reflection and guidance for stronger faith.</p>
+          </article>
+          <article>
+            <h3>Youth Circle</h3>
+            <p>Empowering young Muslims with mentorship and civic engagement.</p>
+          </article>
+          <article>
+            <h3>Charity Drives</h3>
+            <p>Food distribution, zakat collection and outreach for the needy.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section-light">
+      <div class="container">
+        <span class="section-label">Events Calendar</span>
+        <h2>What’s happening this month at the mosque.</h2>
+        <div class="calendar-layout">
+          <div class="calendar-panel">
+            <div class="calendar-header">
+              <button class="calendar-btn" id="prevMonth" aria-label="Previous month">‹</button>
+              <div>
+                <p class="calendar-month" id="calendarMonth">April</p>
+                <p class="calendar-year" id="calendarYear">2026</p>
+              </div>
+              <button class="calendar-btn" id="nextMonth" aria-label="Next month">›</button>
+            </div>
+            <div class="calendar-grid" id="calendarGrid"></div>
+          </div>
+          <div class="event-panel">
+            <div class="event-summary">
+              <h3>Upcoming Events</h3>
+              <ul class="event-list" id="eventList"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prayer-times" class="section-light">
+      <div class="container prayer-grid">
+        <div>
+          <span class="section-label">Prayer Times</span>
+          <h2>Daily schedule for our mosque congregation.</h2>
+          <p>These times are indicative. Please check the mosque notice board for exact Ramadan and special event timings.</p>
+          <p class="small-text" id="todayDate">Today: --</p>
+        </div>
+        <div class="prayer-widget">
+          <div class="next-prayer-card">
+            <span class="section-label">Next Prayer</span>
+            <h3 id="nextPrayerName">--</h3>
+            <p class="prayer-time" id="nextPrayerTime">--</p>
+            <p class="countdown-text" id="countdownText">Calculating time...</p>
+          </div>
+          <div class="prayer-table" id="prayerTable"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-dark contact-section">
+      <div class="container section-grid">
+        <div>
+          <span class="section-label">Contact Us</span>
+          <h2>Visit Central Mosque Ridwanullah in Ikorodu.</h2>
+          <p>Address: 07 Olu-Awoyo Str., Off Oba Fatola Estate, Igbogbo-Ebutte Road, Ikorodu, Lagos State</p>
+          <p>Email: addysam@yahoo.com</p>
+          <p>Phone: +234 811 783 6584</p>
+        </div>
+        <div class="contact-card">
+          <h3>Connect with the mosque</h3>
+          <p>For event bookings, class schedules, and community programmes, reach out or come by during prayer times.</p>
+          <a class="btn btn-primary" href="mailto:addysam@yahoo.com">Send Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Central Mosque Ridwanullah — Ikorodu, Lagos</p>
+      <p>Built for community worship and service.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('nav-open');
+    });
+  </script>
+  <script defer src="script.js"></script>
+</body>
+</html>
