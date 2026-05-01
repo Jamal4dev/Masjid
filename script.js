@@ -24,24 +24,6 @@ function buildEventSchedule() {
       time: '2:30 PM',
       details: 'Join the congregational Friday prayer with a community sermon and fellowship.',
     },
-    {
-      date: formatISODate(nextSaturday),
-      title: 'Saturday Tafsir Session',
-      time: '10:00 AM',
-      details: 'Weekly Qur’an study and Tafsir for all ages at the mosque hall.',
-    },
-    {
-      date: formatISODate(nextWednesday),
-      title: 'Youth Circle & Mentorship',
-      time: '6:00 PM',
-      details: 'Youth engagement meeting, mentorship, and community service planning.',
-    },
-    {
-      date: formatISODate(nextSunday),
-      title: 'Charity Drive Collection',
-      time: '9:00 AM',
-      details: 'Food and clothing donation drive for local families and neighbors in need.',
-    },
   ];
 }
 
