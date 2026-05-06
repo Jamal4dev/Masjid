@@ -1,7 +1,7 @@
 const prayerSchedule = [
   { name: 'Fajr', time: '5:45 AM' },
   { name: 'Dhuhr', time: '1:05 PM' },
-  { name: 'Asr', time: '4:05 PM' },
+  { name: 'Asr', time: '4:10 PM' },
   { name: 'Maghrib', time: '7:05 PM' },
   { name: 'Isha', time: '8:10 PM' },
 ];
